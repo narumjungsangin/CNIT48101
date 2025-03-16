@@ -1,0 +1,201 @@
+<!DOCTYPE html>  
+<html>  
+   <head>
+    <!-- Comments from https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure -->
+    <meta charset = "utf-8"> 
+
+    <title>
+        Junsu's Resume
+    </title> 
+      
+   </head> 
+  
+   <body> 
+      <header role = "banner">
+        <!-- Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another. -->
+        <!-- 
+            TODO (1 pt): Provide a header to your web page. 
+            1. Use the highest level heading to present the page title (E.g. Your Name).
+            2. Use a paragraph to showcase how you position yourself on the job market. E.g. your professional title, domain, accomplishments, etc.
+        -->
+        Junsu Yoon
+        
+      </header> 
+   
+      <nav>
+         <!-- Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate. -->
+        <!-- 
+            TODO (2 pts): Create an unordered list of the key section name of your resume. For example:
+            - Profile Summary
+            - Work Experience
+            - Educaiton
+            - Skill
+            - ...
+            Your resume should at least contain three sections: Work Experience, Education, Skills (you can rename the section titles.)
+            
+         -->
+        <ul>
+            <li><a href="#workExperience">Work Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav> 
+      
+      <main>
+        <!-- for content unique to this page. Use <main> only once per page, and put it directly inside <body>. Ideally this shouldn't be nested within other elements. -->
+        <section> 
+            <!-- for grouping together a single part of the page that constitutes one single piece of functionality (e.g., a mini map, or a set of article headlines and summaries), or a theme. It's considered best practice to begin each section with a heading; also note that you can break <article>s up into different <section>s, or <section>s up into different <article>s, depending on the context. -->
+            <article> 
+                <!-- encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post). -->
+                <h2 id = "workExperience">Work Experience</h2> 
+                <div>
+                    <!-- 
+                        TODO (4 pts): Fill out your most work experience below. Include a bullet list to describe your key achievements.
+                    -->
+                    <h3>Internship / Field Ops Student Team</h3>
+                    <div><span>Purdue IT - Network Infrastructure Engineering Aide </span> | <span>West Lafayette, IN</span> | <span>October 2024 - Present</span></div>
+                    <div>
+                        <ul>
+                            <li>Internet connection in more than 160 buildings in Purdue West Lafayette Campus and maintain internet for more
+                                than 90,000 students and faculties in Purdue
+                                 </li>
+                            <li>Assist in tracking Purdue Information Connections and network infrastructure throughout campus.
+                            </li>
+                            <li>Deploy and install networking gear to support the customer’s networking needs.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Assistant to Project Manager</h3>
+                    <div><span>KOTRA - CES Project</span> | <span>Las Vegas, NV</span> | <span>Jan 2025</span></div>
+                    <div>
+                        <ul>
+                            <li>Helped manage booths for 170+ Korean Startup Companies in the Korean Pavilion during CES 2025.
+                                 </li>
+                            <li>Assisted with technical difficulties throughout booths</li>
+                        </ul>
+                    </div>
+
+                    <h3>Administrative Assistant</h3>
+                    <div><span>Samyoung America SPE-PJT</span> | <span>Kokomo, IN</span> | <span>Mar 2024 - Aug 2024</span></div>
+                    <div>
+                        <ul>
+                            <li>Samyoung America, in partnership with Samsung SDI and Stellantis (Star Plus Energy), managed a project
+                                totaling over 5 billion USD, one of the largest projects in the United States
+                                 </li>
+                            <li>Worked as an administrative assistant, performed pitches for Samsung SDI, and conducted meetings with 100-150
+                                employees daily
+                            </li>
+                            <li>Interpreter between SPE and Samyoung America</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 
+                    TODO (4 pts): Add information about another job that you have had, following the same structure as the example above.
+                    -->
+            </article> 
+            <!-- 
+                TODO (21 pts): Add the other sections (that is, Education, Skills, and more sections that you listed in the navigation bar). In each section, include a header, and choose the most suitable structure for the corresponding content.
+                Please include at least 3 different sections. Each different section counts 7 points. For each section, header counts 1 pt, using suitable structure (tables, lists, etc.) counts 4 pts, adding relevant content counts 2 pts.
+                -->
+            <article> 
+                <h2 id = "project">Project</h2> 
+                <div>
+                    <h3>Backend, Frontend Developer - HTML, Python </h3>
+                    <div><span>GoldnPartner</span> | <span>March 2024 - Present</span></div>
+                    <div>
+                        <ul>
+                            <li>Platform to help small businesses optimize resources by partnering with other organizations.</li>
+                            <li>Roles include frontend, backend development, and pitching the project.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Project Manager / Backend, Frontend Developer - HTML, Python </h3>
+                    <div><span>WeTempo</span> | <span>October 2024</span></div>
+                    <div>
+                        <ul>
+                            <li>App to help manage meetings with friends, clubs, and faculties in the college.</li>
+                            <li>Participated as team leader, frontend, backend development, and project pitching.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Backend Developer - Python </h3>
+                    <div><span>Motion Sensor Backpack (Prototype)</span> | <span>September 2019 - December 2019</span></div>
+                    <div>
+                        <ul>
+                            <li>Developed a prototype backpack with a sonar sensor that vibrates the bag strap to alert the user when danger is approaching from behind.</li>
+                            <li>Tasks included connecting wires, soldering, coding, and assembling the backpack</li>
+                        </ul>
+                    </div>
+                </div>
+            </article> 
+
+            <article> 
+                <h2 id = "education">Education</h2> 
+                <div>
+                    <h3>Purdue University - West Lafayette, IN </h3>
+                    <div><span>Computer Information Technology</span> | <span>West Lafayette, IN</span> | <span>Aug 2019-Dec 2025(est)</span></div>
+                    <div>
+                        <ul>
+                            <li>Major in Computer Information Technology</li>
+                            <li>Minor in Communications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </article> 
+            
+            <article> 
+                <h2 id = "skills">Skills</h2> 
+                <div>
+                    <h3>Programming Language</h3>
+                    <div>
+                        <ul>
+                            <li>Backend: Java, Python, C</li>
+                            <li>Frontend: HTML, CSS, Javascript</li>
+                            <li>Data: SQL</li>
+                        </ul>
+                    </div>
+
+                    <h3>Language</h3>
+                    <div>
+                        <ul>
+                            <li>Korean</li>
+                            <li>English</li>
+                            <li>Intermediate-level Mandarin</li>
+                        </ul>
+                    </div>
+
+                    <h3>Additional Skills</h3>
+                    <div>
+                        <ul>
+                            <li>Video Editing</li>
+                            <li>Canva</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </article> 
+        </section>
+        <aside>
+            <!-- <aside> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.). -->
+                <div>The     cat   sat <br/> 
+                    on   the<br/>
+                       mat.</div>
+                <a href="http://linkedin.com/in/junsuyoon">Linkedln</a>
+        </aside>
+      </main>
+   
+      <footer> 
+        <small>&copy; Copyright 2022,  Junsu Yoon</small>
+
+
+      </footer> 
+   
+   </body> 
+</html>

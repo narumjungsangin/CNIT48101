@@ -1,0 +1,88 @@
+body { /* TODO: explain what elements will the following style be applied to */
+    font-family: Arial, sans-serif; /* TODO: explain how the two font families -- Arial, sans-serif -- will be applied to the elements*/
+    line-height: 1.6; /* TODO: explain what line-height style controls */
+    color: #333; /* Color of fonts*/
+    background-color: gray; /* The background of full webpage*/
+    padding: 20px; /*It iwll be Padding between contents*/
+    
+  }
+
+#main_page{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+#lPage{
+padding: 20px;
+background-color: white;
+}
+#rPage{
+  padding: 20px;
+  background-color: white;
+}
+
+  /* Skip Link Styling */
+.skip-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #004466;
+    color: #004466;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.3s;
+  }
+  
+  .skip-link:hover {
+      /* TODO: specify font color to be white here */
+      color: white;
+  }
+
+  header {
+    background-color: #004466;
+    color: #fff;
+    padding: 20px;
+    text-align: center
+}
+
+/* TODO: select every <h1> element that is contained within a <header> element; apply a style rule such that the bottom margin of each selected <h1> element is 10 pixels */
+header h1{
+  padding-bottom: 10px;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none; /* TODO: explain what style will be applied how */
+  padding: 5px 10px;
+  transition: background 0.3s; /* TODO: explain what style will be applied how */
+}
+
+nav a:hover,
+nav a:focus { /* The color of nav (Home, About, Services, Contact) will change the background color when the mouse hovers */
+  background-color: #006699;
+}
+
+/* Styling for Article and Sidebar */
+article,
+aside {
+  background-color: hotpink/* your choice of color */;
+  padding: 10px/* your choice of space */;
+  border: 10px solid white/* your choice of width, style, and color */;
+}
+
+/* Paragraph Styling with Text Alignment and Columns */
+article p {
+  text-align: center/* your choice of justification */;
+  margin-bottom: 20px/* your choice of space */;
+  column-count: 2/* your choice of column number */;
+  column-gap: 10%/* your choice of space */;
+}
+
+.float-image{
+  width: 40%;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}

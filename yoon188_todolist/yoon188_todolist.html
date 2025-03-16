@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .heading {
+            background-color: hotpink;
+        }
+
+        .heading {
+            text-align: center;
+        }
+        .container {
+            font-size: 1.5rem;
+        }
+
+        #todo-list {
+            min-width: 0.1px;/*the minimum width you would like to have for each todo item*/
+            border: solid 1px #ffffff;
+        }
+
+        .item {
+            border: solid 1px; /* adjust the style the border of each item */
+            border-radius: 10px; /* how rounded do you want the border corner to be */
+            margin: 5%; /* how far you want each item to be apart from other elements */
+            
+            /* rem: Relative to font-size of the root element */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px; /* how much space do you want the text to have from the border */
+            height: 30px; /* height of each item */
+        }
+        .item:hover {
+            background-color: skyblue/* change the color to tell the user the website knows they are hovering over an item. this color has to be different from other items */;
+        }
+
+        button {
+            border-radius: 10px;
+            height: 30px;
+            margin: 5px;
+            }
+        input {
+            font-size: 1.5rem;
+        }
+
+        .heading {
+            padding: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            font-size: 1.5rem;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="heading">
+        <h1>work To Do</h1>
+        <h3>Finish the work To Do!</h3>
+    </div>
+
+    <div class="container">
+        <input type="text" id='new-item-input'/>
+        <button id='add-btn'>Add Task</button>
+    </div>
+
+    <div class="container">
+        <ol id='todo-list'></ol>
+        
+    </div>
+
+    <script>
+        const todoList = document.getElementById('todo-list');
+        document.getElementById('add-btn').addEventListener('click', addItem);
+        function addItem() {
+        let newItem = document.createElement('li');
+        newItem.classList.add('item');
+        
+        let newItemText = document.createElement('span');
+        newItemText.innerText = document.getElementById('new-item-input').value;
+        newItemText.classList.add('item-text');
+        
+        let newDeleteBtn = document.createElement('button');
+        newDeleteBtn.innerText = 'Delete';
+        newDeleteBtn.classList.add('delete-btn');
+        
+        newItem.appendChild(newItemText);
+        newItem.appendChild(newDeleteBtn);
+        
+        newDeleteBtn.addEventListener('click', removeItem);
+        todoList.appendChild(newItem);
+        document.getElementById('new-item-input').value = '';
+        }
+
+        function removeItem(e) {
+            let item = e.target.parentElement;
+            item.remove();
+        }
+
+        document
+            .getElementById('newItemInput')
+            .addEventListener('keypress', (e) =>
+            e.keyCode === 13 ? addItem() : false
+        );
+
+    </script>
+  </body>
+</html>
