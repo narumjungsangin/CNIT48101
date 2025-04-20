@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input id="userid-ele" type = "number" name="userid" value = "1">
+        </form>
+
+
+    </body>
+
+
+</html>
+
+<button id="fetch-user">Get User Info</button>
+<div id="user-info"></div>
+
+<script>
+document.getElementById('fetch-user').addEventListener('click', () => {
+    let userid = 
+    fetch('https://jsonplaceholder.typicode.com/users/1')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('user-info').innerHTML = `
+                Name: ${data.name} <br>
+                Email: ${data.email} <br>
+
+            `;
+        })
+        .catch(error => console.error(error));
+});
+</script>

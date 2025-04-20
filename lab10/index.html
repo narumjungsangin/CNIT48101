@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Group Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+
+    <form id="preferencesForm">
+        <label for="major">Major:</label>
+        <select id="major" name="major">
+            <option value="Computer and Information Technology">Computer and Information Technology</option>
+            <option value="Computer and Graphics Technology">Computer and Graphics Technology</option>
+        </select>
+
+        <label for="courses">courses:</label>
+        <input type="text" id="courses" name="courses" placeholder="Introduction to Programming">
+
+        <label for="studyTime">study Time:</label>
+        <input type="text" id="studyTime" name="studyTime" placeholder="e.g., Friday 2pm-4pm">
+
+        <label for="groupSize">Group Size:</label>
+        <input type="number" id="groupSize" name="groupSize" min="1" max="10">
+
+            <!-- Add more options according to your JSON data -->
+        </select>
+    
+        <!-- Repeat the above pattern for courses, times, and group size -->
+        <button type="submit">Find Groups</button>
+    </form>
+</body>
+</html>

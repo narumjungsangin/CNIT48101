@@ -1,0 +1,18 @@
+<button id="dog-btn">Show Random Dog</button>
+<button id="dog-btn">Get Dog Info</button>
+<div id="dog-container"></div>
+
+
+
+<script>
+document.getElementById('dog-btn').addEventListener('click', () => {
+    fetch('https://dog.ceo/api/breeds/image/random')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('dog-container').innerHTML = `
+                <img src="${data.name}" width="300">
+            `;
+        })
+        .catch(error => console.error(error));
+});
+</script>

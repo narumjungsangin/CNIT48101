@@ -1,0 +1,54 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "keyword": "CIT study hacks",
+            "explanation": "Efficient study techniques and tips tailored to Computer Information Technology students."
+        },
+        {
+            "id": 2,
+            "keyword": "Coding challenges live",
+            "explanation": "Watch or participate in live coding challenges for both entertainment and learning."
+        },
+        {
+            "id": 3,
+            "keyword": "Tech news and updates",
+            "explanation": "Stay updated with the latest in technology, gadgets, software, and industry trends."
+        },
+        {
+            "id": 4,
+            "keyword": "DIY tech projects",
+            "explanation": "Fun and educational DIY projects involving technology for hands-on learning."
+        },
+        {
+            "id": 5,
+            "keyword": "CIT career advice",
+            "explanation": "Insights and advice on career paths, job hunting, and skill development in the CIT field."
+        },
+        {
+            "id": 6,
+            "keyword": "Tech humor and memes",
+            "explanation": "Light-hearted entertainment focusing on tech-related humor and memes."
+        },
+        {
+            "id": 7,
+            "keyword": "Virtual reality applications",
+            "explanation": "Explore the cutting-edge applications of VR in various fields, including entertainment and education."
+        },
+        {
+            "id": 8,
+            "keyword": "Esports and gaming trends",
+            "explanation": "Updates on the gaming industry, including esports, game development, and game reviews."
+        },
+        {
+            "id": 9,
+            "keyword": "Tech influencer vlogs",
+            "explanation": "Follow tech influencers for a mix of personal insights, technology discussions, and lifestyle content."
+        },
+        {
+            "id": 10,
+            "keyword": "Innovative tech startups",
+            "explanation": "Discover new startups in the tech space, their products, and the stories behind their creation for inspiration and knowledge."
+        }
+    ]
+}
